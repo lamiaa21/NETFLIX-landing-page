@@ -11,7 +11,10 @@ body {
   color: gray;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   color: #fff;
 }
 
@@ -36,7 +39,10 @@ ul {
   width: 100%;
   height: 93vh;
   position: relative;
-  background: url("https://i.ibb.co/vXqDmnh/background.jpg") no-repeat center center/cover;
+  background-image: url("https://i.ibb.co/vXqDmnh/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 .header::after {
   content: "";
@@ -49,7 +55,6 @@ ul {
   background: rgba(0, 0, 0, 0.6);
   box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
 }
-
 .header-top {
   z-index: 2;
   position: relative;
@@ -73,7 +78,6 @@ ul {
 .header-top .btn-rounded {
   border-radius: 5px;
 }
-
 .header-content {
   z-index: 2;
   position: relative;
@@ -138,7 +142,9 @@ ul {
   color: #fff;
   text-align: center;
 }
-.tabs-content #tab-1-content, .tabs-content #tab-2-content, .tabs-content #tab-3-content {
+.tabs-content #tab-1-content,
+.tabs-content #tab-2-content,
+.tabs-content #tab-3-content {
   display: none;
   opacity: 0;
 }
@@ -192,24 +198,24 @@ ul {
   width: 100%;
   margin-top: 2rem;
 }
-.table .thead .th {
+.table thead th {
   text-transform: uppercase;
   padding: 0.8rem;
 }
-.table .tbody {
+.table tbody {
   display: table-row-group;
   vertical-align: middle;
   border-color: inherit;
 }
-.table .tbody .tr .td {
+.table tbody tr td {
   color: #999;
   padding: 0.8rem 1.2rem;
   text-align: center;
 }
-.table .tbody .tr .td :first-child {
+.table tbody tr td :first-child {
   text-align: left;
 }
-.table .tbody .tr :nth-child(odd) {
+.table tbody tr :nth-child(odd) {
   background: #222;
 }
 
